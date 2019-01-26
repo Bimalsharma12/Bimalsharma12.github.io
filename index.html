@@ -1,16 +1,98 @@
 <!DOCTYPE html>
-<html lang="en-us">
-    <head>
-        <meta charset="UTF-8">
-        <title>My Bio Page</title>
-    </head>
-    <body>
-        <h1>Bimal's Bio</h1>
+<html lang="en">
 
-        <br>
-        <img src="https://img.purch.com/w/660/aHR0cDovL3d3dy5zcGFjZS5jb20vaW1hZ2VzL2kvMDAwLzAwNS82NDQvb3JpZ2luYWwvbW9vbi13YXRjaGluZy1uaWdodC0xMDA5MTYtMDIuanBn" width="100" alt="moon"  />
-        <a href="https://google.com"</a>
-          <h2>I am student of UC Berkeley Boot camp</h2>
+<head>
+  <meta charset="UTF-8">
 
-    </body>
+  <!-- Link to the CSS stylesheet -->
+    <link href="css/main.css" rel="stylesheet">
+
+    <!-- Bootstrap Stylesheet -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+ <style>
+        body {background-color:rgb(226, 225, 225)}
+  </style>
+
+  <title>Landing page</title>
+
+</head>
+<body>
+  <nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">Lattitude</a>
+    </div>
+    <ul class="nav navbar-nav">
+
+      <li class="dropdown">
+        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Plots
+        <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="temperature.html">Max Temperature</a></li>
+          <li><a href="humidity.html">Humidity</a></li>
+          <li><a href="cloudiness.html">cloudiness</a></li>
+          <li><a href="windspeed.html">wind_speed</a></li>
+        </ul>
+      </li>
+      <li><a href="comparision.html">Comparision</a></li>
+      <li><a href="data.html">Data</a></li>
+    </ul>
+  </div>
+</nav>
+
+<div class="container">
+    <div class="row">
+       <div class="col-md-8">
+         <h2 style="color:lightseagreen;"><strong> Summary: Latitude vs. X</strong></h2>
+
+         <div class="paragraphs">
+             <div class="span4">
+               <div class="clearfix content-heading">
+                   <img class="pull-left" src="Resources/assets/images/Fig1.png" alt = "city latitude and max temperature"class="float-left" width = 40%/>
+                   <p>The purpose of this project was to analyze how the weather changes as you get closer to the equator. To accomplish this analysis, we first pulled data from OpenWeatherMAP API to assemble a dataset of over 500 cities.</p>
+                  <p>After assembling the dataset, we used Matplotlib to plot various aspects of the weather vs.latitude. Factors we looked at included: temperature, humidity, cloudiness, and wind speed. This site provides the source data and visualizations created as part of the analysis, as well as explanations and descriptions of any trends and correlations witnessed.</p>
+               </div>
+
+             </div>
+           </div>
+         </div>
+<!-- Links to visualisation -->
+<div class = "row">
+  <div class = "col-md-3">
+      <h2 style="color:lightseagreen;"><strong> Visualizations</strong></h2>
+
+      <hr>
+      <ul class = "a">
+        <li>
+          <a href = "temperature.html">
+            <img src = "Resources/assets/images/Fig1.png" alt = "city latitude and max temperature" width = 80%/>
+            </a>
+        </li>
+
+        <li>
+          <a href = "humidity.html">
+            <img src = "Resources/assets/images/Fig2.png" alt = "city latitude and humidity" width = 80%/>
+            </a>
+        </li>
+
+        <li>
+          <a href = "cloudiness.html">
+            <img src = "Resources/assets/images/Fig3.png" alt = "city latitude and claudiness" width = 80%/>
+            </a>
+        </li>
+
+        <li>
+          <a href = "windspeed.html">
+            <img src = "Resources/assets/images/Fig4.png" alt = "city latitude and windspeed" width = 80%/>
+            </a>
+        </li>
+
+    </div>
+
+
+
+</body>
 </html>
